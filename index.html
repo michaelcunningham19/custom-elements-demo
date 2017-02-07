@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basic HLS Video Player via Custom Elements Demo</title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Web Components: Custom Elements Demo with HLS Video</h1>
+    <button id="swap">Swap Sources</button>
+    <br>
+    <hr>
+
+    <section class="videos">
+
+      <hls-video
+        id="video1"
+        video-title="Big Buck Bunny"
+        src="http://www.streambox.fr/playlists/x36xhzz/x36xhzz.m3u8">
+      </hls-video>
+
+      <hls-video
+        id="video2"
+        video-title="Tears of Steel"
+        src="http://profficialsite.origin.mediaservices.windows.net/5ab94439-5804-4810-b220-1606ddcb8184/tears_of_steel_1080p-m3u8-aapl.ism/manifest(format=m3u8-aapl)">
+      </hls-video>
+
+    </section>
+
+    <hr>
+    <br>
+    <h1>Resources</h1>
+    <ul class="resources">
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements">MDN: Custom Elements</a></li>
+      <li><a href="https://developers.google.com/web/fundamentals/getting-started/primers/customelements">Google: Custom Elements v1: Reusable Web Components</a></li>
+    </ul>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/0.6.20/hls.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
