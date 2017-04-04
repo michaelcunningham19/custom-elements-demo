@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Basic HLS Video Player via Custom Elements Demo</title>
     <link href="styles.css" rel="stylesheet">
+
+    <link rel="import" href="/player.html">
   </head>
   <body>
     <h1>Web Components: Custom Elements Demo with HLS Video</h1>
@@ -18,7 +20,7 @@
       <hls-video
         id="video1"
         video-title="Big Buck Bunny"
-        src="http://www.streambox.fr/playlists/x36xhzz/x36xhzz.m3u8">
+        src="https://play.ingest.info/playlists/14cf8ce8-6e8e-423f-a92b-833cd211fc74/11657b14-bcac-4ad7-8fa7-705335d5fd60.m3u8?name=high">
       </hls-video>
 
       <hls-video
@@ -35,9 +37,9 @@
     <ul class="resources">
       <li><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements">MDN: Custom Elements</a></li>
       <li><a href="https://developers.google.com/web/fundamentals/getting-started/primers/customelements">Google: Custom Elements v1: Reusable Web Components</a></li>
+      <li><a href="https://www.html5rocks.com/en/tutorials/webcomponents/imports/">HTML Imports</a></li>
     </ul>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/0.6.20/hls.min.js"></script>
     <script src="scripts.js"></script>
   </body>
 </html>
